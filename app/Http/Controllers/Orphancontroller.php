@@ -13,7 +13,7 @@ class Orphancontroller extends Controller
      */
     public function index()
     {
-        $orphans=Orphan::all();
+        $orphans=Orphan::latest()->paginate(5);
         return view('orphans.index',compact('orphans'));
     }
 

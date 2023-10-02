@@ -40,6 +40,10 @@
                 
             @endforeach
         </table>
+          
+        <div class="d-flex">
+            {!! $orphans->links() !!}
+        </div>
 
     </div>
 </div>
